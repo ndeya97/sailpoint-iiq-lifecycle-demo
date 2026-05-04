@@ -13,7 +13,7 @@ and ComeBack scenarios, reflecting real enterprise conditions.
 
 ## Lifecycle Flow
 
-*(Architecture diagram — coming soon)*
+![IAM Lifecycle Flow](iam-lifecycle-flow.png)
 
 ---
 
