@@ -1,4 +1,6 @@
 # SailPoint IIQ — Identity Lifecycle Demo
+> Based on hands-on work at BNP Paribas · Synetis (Oct 2023 – Feb 2024)  
+> *Reference letter available upon request*
 
 ## Overview
 
@@ -67,9 +69,21 @@ and ComeBack scenarios, reflecting real enterprise conditions.
 
 ---
 
+## Project Files
+
+| File | Description |
+|---|---|
+| `/rules/correlation-rule.bsh` | BeanShell correlation rule — employeeId + email fallback |
+| `/data/hr-sample.csv` | Sample HR onboarding file with JML event types |
+| `/workflows/leaver-workflow-spec.md` | Technical spec for Leaver workflow |
+
+---
+
 ## Note
-This project is a simplified representation of real-world IAM implementations 
-and is intended to highlight key lifecycle concepts rather than full system complexity.
+This project reproduces IAM lifecycle patterns from a regulated banking environment.  
+Code samples (BeanShell rules, CSV structure) reflect actual implementation approaches  
+used during the mission — anonymized for confidentiality.
+
 ---
 
 ## Current Focus
