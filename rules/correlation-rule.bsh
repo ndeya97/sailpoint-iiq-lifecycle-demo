@@ -1,0 +1,42 @@
+import sailpoint.object.Identity;
+import sailpoint.object.Link;
+import java.util.List;
+
+/**
+ * Correlation Rule — HR CSV Source
+ * Matches incoming HR records to existing IIQ identities
+ * based on employee ID (primary key) with email fallback.
+ *
+ * Used in: BNP Paribas banking environment (via Synetis)
+ * Author: Ndeye Awa Diop
+ */
+public String correlate(Map environment, Map arguments) {
+
+    String employeeId = (String) arguments.get("employeeId");
+    String email      = (String) arguments.get("email");
+
+    // Primary correlation: employee ID
+    if (employeeId != null && !employeeId.trim().isEmpty()) {
+        List identities = context.search(
+            Identity.class,
+            Filter.eq("employeeId", employeeId.trim())
+        );
+        if (identities != null && identities.size() == 1) {
+            return ((Identity) identities.get(0)).getName();
+        }
+    }
+
+    // Fallback correlation: corporate email
+    if (email != null && !email.trim().isEmpty()) {
+        List identities = context.search(
+            Identity.class,
+            Filter.eq("email", email.toLowerCase().trim())
+        );
+        if (identities != null && identities.size() == 1) {
+            return ((Identity) identities.get(0)).getName();
+        }
+    }
+
+    // No match found — will trigger Joiner workflow
+    return null;
+}
