@@ -1,0 +1,8 @@
+employeeId,firstName,lastName,email,department,jobTitle,managerId,status,startDate,endDate
+EMP001,Alice,Martin,alice.martin@bnpparibas.com,Retail Banking,Business Analyst,MGR010,active,2023-03-01,
+EMP002,Bob,Chen,bob.chen@bnpparibas.com,IT Security,IAM Engineer,MGR011,active,2023-04-15,
+EMP003,Claire,Dubois,claire.dubois@bnpparibas.com,Compliance,Risk Officer,MGR010,active,2023-01-10,
+EMP004,David,Smith,david.smith@bnpparibas.com,Retail Banking,Senior Analyst,MGR012,inactive,2023-06-01,2024-01-15
+EMP005,Emma,Laurent,emma.laurent@bnpparibas.com,IT Security,Security Analyst,MGR011,active,2023-05-20,
+EMP006,Fatou,Ndiaye,fatou.ndiaye@bnpparibas.com,Compliance,Data Protection Officer,MGR013,active,2023-07-01,
+EMP007,Hugo,Bernard,hugo.bernard@bnpparibas.com,Finance,Controller,MGR014,inactive,2022-09-01,2023-12-31
