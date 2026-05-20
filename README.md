@@ -50,14 +50,22 @@ and ComeBack scenarios, reflecting real enterprise conditions.
 
 ## My Contribution at BNP Paribas
 
-- Contributed to the configuration of Joiner / Mover / Leaver / LOA / ComeBack workflows in IIQ
+**Directly implemented**
+- Leave of Absence (LOA) workflow — temporary access suspension via HR event trigger in IIQ
+- ComeBack workflow — access restoration and re-provisioning after return from leave in IIQ
 - Wrote BeanShell aggregation rules for identity data processing
 - Set up CSV onboarding and identity model configuration
-- Ran access certification campaigns (mover scenarios)
+- Access certification campaigns — Mover scenarios configuration (least-privilege enforcement)
 - Performed unit testing and UAT support
-- Customized notification templates (EmailTemplate) using Velocity
-- Customized IdentityIQ UI (branding, HTML/CSS) to align with client standards
-- Produced technical documentation (admin guides, spec updates)
+- Notification templates (EmailTemplate) using Velocity
+- IdentityIQ UI customization (branding, HTML/CSS) to align with client standards
+- Technical documentation (admin guides, spec updates)
+
+**Participated in (testing & UAT):**
+- Joiner workflow — identity creation and role assignment
+- Mover workflow — access update on department change
+- Leaver workflow — access revocation and account suspension
+- Red button — emergency access revocation
 
 ---
 
@@ -75,7 +83,7 @@ and ComeBack scenarios, reflecting real enterprise conditions.
 |---|---|
 | `/rules/correlation-rule.bsh` | BeanShell rule — identity matching by employeeId or email |
 | `/data/hr-sample.csv` | Sample HR onboarding file with JML event types |
-| `/workflows/leaver-workflow-spec.md` | Technical spec for Leaver workflow |
+| `/workflows/loa-comeback-workflow-spec.md` | Technical spec for Leave of Absence and Comeback workflows |
 
 ---
 
