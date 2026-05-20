@@ -73,7 +73,7 @@ and ComeBack scenarios, reflecting real enterprise conditions.
 
 | File | Description |
 |---|---|
-| `/rules/correlation-rule.bsh` | BeanShell correlation rule — employeeId + email fallback |
+| `/rules/correlation-rule.bsh` | BeanShell rule — identity matching by employeeId or email |
 | `/data/hr-sample.csv` | Sample HR onboarding file with JML event types |
 | `/workflows/leaver-workflow-spec.md` | Technical spec for Leaver workflow |
 
